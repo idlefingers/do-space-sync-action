@@ -1,10 +1,6 @@
 # GitHub Action to Sync DigitalOcean Space 🔄 
 
-> **⚠️ Note:** To use this action, you must have access to the [GitHub Actions](https://github.com/features/actions) feature. GitHub Actions are currently only available in public beta. You can [apply for the GitHub Actions beta here](https://github.com/features/actions/signup/).
-
 This simple action uses the [vanilla AWS CLI](https://docs.aws.amazon.com/cli/index.html) to sync a directory (either from your repository or generated during your workflow) with a remote DigitalOcean space.
-
-**Performing this action deletes any files in the bucket that are *not* present in the source directory.** Working on making this optional in the next release!
 
 ## Usage
 
@@ -39,6 +35,7 @@ jobs:
 | ------------- | ------------- | ------------- | ------------- |
 | `SOURCE_DIR` | The local directory you wish to sync/upload. For example, `./public`. | `env` | **Yes** |
 | `SPACE_REGION` | The region where you created your space in. For example, `fra1`. [Full list of regions here.](https://www.digitalocean.com/docs/platform/availability-matrix/) | `env` | **Yes** |
+| `DELETE` | If set to `true`, deletes any files in the bucket that are *not* present in the source directory. Default: `true`. | `env` | **No** |
 
 
 ### Required Secret Variables
