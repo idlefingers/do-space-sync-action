@@ -40,6 +40,11 @@ jobs:
 | `SOURCE_DIR` | The local directory you wish to sync/upload. For example, `./public`. | `env` | **Yes** |
 | `SPACE_REGION` | The region where you created your space in. For example, `fra1`. [Full list of regions here.](https://www.digitalocean.com/docs/platform/availability-matrix/) | `env` | **Yes** |
 
+### Optional Environment Variables
+
+| Key | Value | Type | Required |
+| ------------- | ------------- | ------------- | ------------- |
+| `DEST_DIR` | The remote directory you wish to sync/upload. For example, `./public`. | `env` | No |
 
 ### Required Secret Variables
 
