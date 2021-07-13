@@ -44,7 +44,7 @@ jobs:
 
 | Key | Value | Type | Required |
 | ------------- | ------------- | ------------- | ------------- |
-| `DEST_DIR` | The remote directory you wish to sync/upload. For example, `./public`. | `env` | No |
+| `DEST_DIR` | The remote directory within the space where you want to upload the files to. No leading slash is needed. For example, `my-project`. | `env` | No |
 
 ### Required Secret Variables
 
